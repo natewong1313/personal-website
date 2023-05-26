@@ -10,16 +10,10 @@ dependencies:
   '@astrojs/vercel':
     specifier: ^3.4.0
     version: 3.4.0(astro@2.5.5)(react@18.2.0)
-  '@fontsource-variable/chivo-mono':
-    specifier: ^5.0.2
-    version: 5.0.2
   '@fontsource-variable/hanken-grotesk':
     specifier: ^5.0.2
     version: 5.0.2
   '@fontsource-variable/inter':
-    specifier: ^5.0.1
-    version: 5.0.1
-  '@fontsource/chivo-mono':
     specifier: ^5.0.1
     version: 5.0.1
   '@types/react':
@@ -31,9 +25,6 @@ dependencies:
   astro:
     specifier: ^2.5.5
     version: 2.5.5
-  lucide-react:
-    specifier: ^0.221.0
-    version: 0.221.0(react@18.2.0)
   react:
     specifier: ^18.0.0
     version: 18.2.0
@@ -643,20 +634,12 @@ packages:
     dev: false
     optional: true
 
-  /@fontsource-variable/chivo-mono@5.0.2:
-    resolution: {integrity: sha512-Y3TLS77zdts4QKbBDgzOZdgREQX8Dm6hBDksKkh5wD5k5cm905ceSCXuvVktizY5Jqh+7phMznWl2T/cdwJB9g==}
-    dev: false
-
   /@fontsource-variable/hanken-grotesk@5.0.2:
     resolution: {integrity: sha512-8omfQdat1KNhNwe+nn8z20n/t9ADoY/ByvUzH4SAzaCwxkbT3My8ndCp8X0Kd+b6c/x9WmRsALFBxewP0RZRcA==}
     dev: false
 
   /@fontsource-variable/inter@5.0.1:
     resolution: {integrity: sha512-cqBEayOWZqERrWnwDUTyUsClZpN1Pv3w/1+NRxwKV4sRdy3RyyRL9DRIgauq8ySxNtJ5ZkNimxsZzCdoiR2Fcw==}
-    dev: false
-
-  /@fontsource/chivo-mono@5.0.1:
-    resolution: {integrity: sha512-PL9F1VTnXbCQqbBRxScv4r93iXWtJpS2ggn+JcVCNaO3NrEDLgSRRMfOmAdVX3EaP4xOQRK6rCoDR1sNobBfBQ==}
     dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -2119,14 +2102,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
-    dev: false
-
-  /lucide-react@0.221.0(react@18.2.0):
-    resolution: {integrity: sha512-g99pn2/lBaCEAA0cbi4eaCO+3rY4mSfjCaDlo8Z30F0wk8MXoBXhCR1TaUS9cmNdOP9VGxgUpoB4qMg7/vyC8A==}
-    peerDependencies:
-      react: ^16.5.1 || ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 18.2.0
     dev: false
 
   /magic-string@0.27.0:
