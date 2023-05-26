@@ -5,7 +5,7 @@ import type { LucideIcon } from "lucide-react"
 
 export default function Footer() {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center gap-1">
       <p className="text-zinc-400">
         This site was built with{" "}
         <a
