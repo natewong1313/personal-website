@@ -147,7 +147,7 @@ type BadgeProps = {
 function Badge(props: BadgeProps) {
   return (
     <div className="rounded-sm flex items-center bg-zinc-800 w-fit px-2 text-sm py-1">
-      <props.icon className="mr-2 text-blue-400" />
+      <props.icon size={18} className="mr-2 text-blue-400" />
       {props.name}
     </div>
   )
