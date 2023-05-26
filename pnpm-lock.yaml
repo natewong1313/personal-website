@@ -16,6 +16,9 @@ dependencies:
   '@fontsource-variable/inter':
     specifier: ^5.0.1
     version: 5.0.1
+  '@icons-pack/react-simple-icons':
+    specifier: ^7.2.0
+    version: 7.2.0(react@18.2.0)
   '@types/react':
     specifier: ^18.0.21
     version: 18.2.7
@@ -640,6 +643,14 @@ packages:
 
   /@fontsource-variable/inter@5.0.1:
     resolution: {integrity: sha512-cqBEayOWZqERrWnwDUTyUsClZpN1Pv3w/1+NRxwKV4sRdy3RyyRL9DRIgauq8ySxNtJ5ZkNimxsZzCdoiR2Fcw==}
+    dev: false
+
+  /@icons-pack/react-simple-icons@7.2.0(react@18.2.0):
+    resolution: {integrity: sha512-XmyAiE+cDWDoCQGboie4se79ph2xAj/lQV+YVmLlX0nAFf92lci2ciVxWSN28f4MWZojskRWsu9S9BoH8UCQgg==}
+    peerDependencies:
+      react: ^16.13 || ^17 || ^18
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /@jridgewell/gen-mapping@0.3.3:

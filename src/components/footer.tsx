@@ -1,5 +1,5 @@
-import type { IconType } from "react-icons"
-import { SiGithub, SiLinkedin } from "react-icons/si"
+import { SiGithub, SiLinkedin } from "@icons-pack/react-simple-icons"
+import type { IconType } from "@icons-pack/react-simple-icons"
 
 export default function Footer() {
   return (

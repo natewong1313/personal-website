@@ -1,4 +1,4 @@
-import type { IconType } from "react-icons"
+import type { IconType } from "@icons-pack/react-simple-icons"
 import {
   SiTypescript,
   SiReact,
@@ -11,7 +11,7 @@ import {
   SiPostgresql,
   SiDocker,
   SiSelenium,
-} from "react-icons/si"
+} from "@icons-pack/react-simple-icons"
 
 type Language = {
   name: string
