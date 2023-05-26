@@ -1,5 +1,7 @@
 import { SiGithub, SiLinkedin } from "@icons-pack/react-simple-icons"
 import type { IconType } from "@icons-pack/react-simple-icons"
+import { Mail } from "lucide-react"
+import type { LucideIcon } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -28,13 +30,14 @@ export default function Footer() {
           icon={SiLinkedin}
           href="https://www.linkedin.com/in/nate-wong-929b28191/"
         />
+        <FooterBtn icon={Mail} href="mailto:natewong1@gmail.com" />
       </div>
     </div>
   )
 }
 
 type FooterBtnProps = {
-  icon: IconType
+  icon: IconType | LucideIcon
   href: string
 }
 function FooterBtn(props: FooterBtnProps) {
