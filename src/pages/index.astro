@@ -1,0 +1,19 @@
+---
+import Layout from "@layouts/Layout.astro"
+import Navbar from "@components/navbar"
+import About from "@components/about"
+import Projects from "@components/projects"
+import Footer from "@components/footer"
+---
+
+<Layout title="Nate Wong">
+  <main class="bg-zinc-950 text-white min-h-screen">
+    <div class="max-w-3xl py-16 mx-auto px-8">
+      <About />
+      <hr class="bg-zinc-700 h-px border-0 my-6" />
+      <Projects />
+      <hr class="bg-zinc-700 h-px border-0 my-6" />
+      <Footer />
+    </div>
+  </main>
+</Layout>
