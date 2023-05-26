@@ -1,6 +1,5 @@
 import type { IconType } from "react-icons"
 import { SiGithub, SiLinkedin } from "react-icons/si"
-import { HiMail } from "react-icons/hi"
 
 export default function Footer() {
   return (
@@ -29,7 +28,6 @@ export default function Footer() {
           icon={SiLinkedin}
           href="https://www.linkedin.com/in/nate-wong-929b28191/"
         />
-        <FooterBtn icon={HiMail} href="mailto:natewong1@gmail.com" />
       </div>
     </div>
   )
