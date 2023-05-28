@@ -17,11 +17,11 @@ export default function Footer() {
         </a>{" "}
         and deployed to{" "}
         <a
-          href="https://vercel.com/"
+          href="https://pages.cloudflare.com/"
           className="text-slate-100 hover:underline hover:underline-offset-2"
           target="_blank"
         >
-          Vercel
+          Cloudflare
         </a>
       </p>
       <div className="flex gap-2">
