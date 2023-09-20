@@ -24,7 +24,8 @@ export default function About() {
         <p>
           Now, I'm completing my degree in{" "}
           <span className="text-zinc-100">Computer Science</span> at the
-          University of Mary Washington.
+          University of Mary Washington and working as a software engineer
+          intern.
         </p>
       </div>
       <nav className="mt-2 text-zinc-400">

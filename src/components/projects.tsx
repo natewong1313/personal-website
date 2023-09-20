@@ -3,6 +3,7 @@ import {
   SiTypescript,
   SiReact,
   SiNextdotjs,
+  SiRemix,
   SiPython,
   SiQt,
   SiMongodb,
@@ -11,6 +12,7 @@ import {
   SiPostgresql,
   SiDocker,
   SiSelenium,
+  SiMysql,
 } from "@icons-pack/react-simple-icons"
 
 type Language = {
@@ -38,6 +40,35 @@ export default function Projects() {
           descriptions={[
             `Mercury is a desktop app that helped small business owners automate the process of acquiring inventory for their eccomerce businesses. It included a companion mobile app for getting notifications and viewing their data.`,
             `This was the most time-consuming project I've ever developed and taught me a lot about building production grade apps. Dealing with issues such as mitigating DDOS attacks, handling user authentication, and scaling the rest API with Kubernetes to serve hundreds of thousands of requests per second has prepared me for the workforce.`,
+          ]}
+        />
+        <Project
+          title="Go React SSR"
+          date="September 2023"
+          link="https://github.com/natewong1313/go-react-ssr"
+          languages={[
+            { name: "Golang", icon: SiGo },
+            { name: "React", icon: SiReact },
+            { name: "Typescript", icon: SiTypescript },
+          ]}
+          descriptions={[
+            `Drop in plugin for rendering React components server side with Go. It enables end to end type safety and allows you to pass down props from Go to React.`,
+            `Published as a Go package and open-sourced on Github.`,
+          ]}
+        />
+        <Project
+          title="UMW Cribs"
+          date="June-August 2023"
+          link="https://github.com/natewong1313/UMW-Cribs"
+          languages={[
+            { name: "Typescript", icon: SiTypescript },
+            { name: "React", icon: SiReact },
+            { name: "Remix", icon: SiRemix },
+            { name: "MySQL", icon: SiMysql },
+          ]}
+          descriptions={[
+            `Web app designed to help students find housing near the University of Mary Washington. It's built with React Remix and uses MySQL for storing housing data.`,
+            `Housing data is scraped from a variety of websites, cleaned, and stored in a database. A cron job is used to update the database every day.`,
           ]}
         />
         <Project
