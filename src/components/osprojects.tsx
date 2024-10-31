@@ -63,7 +63,7 @@ function Project({ name, url, stars, description }: ProjectProps) {
   return (
     <div className="rounded-xl font-noto">
       <div className="flex justify-between">
-        <a href={url} target="_blank" className="text-sm">
+        <a href={url} target="_blank" className="text-sm hover:underline">
           {name}
         </a>
         <span className="flex items-center text-xs">
