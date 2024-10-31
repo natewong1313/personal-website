@@ -1,18 +1,42 @@
 ---
-import Layout from "@layouts/Layout.astro"
-import About from "@components/about"
-import Projects from "@components/projects"
-import Footer from "@components/footer"
+import Contact from "@components/contact"
+import { Hero } from "@components/hero"
+import OpenSourceProjects from "@components/osprojects"
+
+const repoData = await Promise.all([
+  fetch("https://api.github.com/repos/natewong1313/go-react-ssr"),
+  fetch("https://api.github.com/repos/natewong1313/bird-bot"),
+  fetch("https://api.github.com/repos/natewong1313/umw-cribs"),
+]).then(async ([grsReq, bbReq, ucReq]) => {
+  return {
+    goReactSSR: await grsReq.json(),
+    birdBot: await bbReq.json(),
+    umwCribs: await ucReq.json(),
+  }
+})
 ---
 
-<Layout title="Nate Wong">
-  <main class="bg-zinc-950 text-white min-h-screen">
-    <div class="max-w-3xl py-16 mx-auto px-8">
-      <About />
-      <hr class="bg-zinc-700 h-px border-0 my-6" />
-      <Projects />
-      <hr class="bg-zinc-700 h-px border-0 my-6" />
-      <Footer />
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nate Wong</title>
+  </head>
+  <body class="bg-zinc-100">
+    <div class="max-w-xl mx-auto pt-8">
+      <Hero />
+      <OpenSourceProjects repoData={repoData} />
+      <Contact />
     </div>
-  </main>
-</Layout>
+  </body>
+</html>
