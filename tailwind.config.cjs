@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter Variable", ...defaultTheme.fontFamily.sans],
-        hanken: ["Hanken Grotesk Variable", ...defaultTheme.fontFamily.sans],
+        //sans: ["Inter Variable", ...defaultTheme.fontFamily.sans],
+        sans: ["Darker Grotesque", ...defaultTheme.fontFamily.sans],
         playfair: ["playfair Display", ...defaultTheme.fontFamily.serif],
         noto: ["Noto Serif", ...defaultTheme.fontFamily.serif],
       },
