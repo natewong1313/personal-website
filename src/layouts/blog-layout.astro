@@ -1,6 +1,6 @@
 ---
-import { Hero } from "@components/hero"
 import NavBar from "@components/navbar"
+const { frontmatter } = Astro.props
 ---
 
 <!doctype html>
@@ -17,10 +17,12 @@ import NavBar from "@components/navbar"
       href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap"
       rel="stylesheet"
     />
-    <title>Nate Wong</title>
+    <title>{frontmatter.title}</title>
   </head>
-  <body class="bg-zinc-100">
+  <body class="bg-zinc-100 flex flex-col">
     <NavBar client:load />
-    <Hero />
+    <div class="px-8 py-4 mx-auto text-2xl">
+      <slot />
+    </div>
   </body>
 </html>

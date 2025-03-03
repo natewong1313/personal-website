@@ -10,9 +10,10 @@ export default function NavBar() {
   }, [])
   return (
     <div className="flex font-medium text-xl px-8 py-4 justify-between">
-      <p>Nate Wong</p>
-      {/* <p>It's {currentTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p> */}
-      <a className="hover:underline" href="https://www.github.com/natewong1313" target="_blank">Work</a>
+      <a href="/">Nate Wong</a>
+      <a className="hover:underline" href="/blog">
+        Blog
+      </a>
     </div>
   )
 }

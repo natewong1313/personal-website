@@ -1,6 +1,7 @@
 ---
-import { Hero } from "@components/hero"
 import NavBar from "@components/navbar"
+import { getCollection } from "astro:content"
+const posts = await getCollection("blog")
 ---
 
 <!doctype html>
@@ -17,10 +18,23 @@ import NavBar from "@components/navbar"
       href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap"
       rel="stylesheet"
     />
-    <title>Nate Wong</title>
+    <title>Nate's Blog</title>
   </head>
-  <body class="bg-zinc-100">
+  <body class="bg-zinc-100 flex flex-col">
     <NavBar client:load />
-    <Hero />
+    <div class="px-8 py-4 mx-auto">
+      <h1 class="text-4xl font-semibold">Blog Posts</h1>
+      <ul class="mt-2">
+        {
+          posts.map((post) => (
+            <li class="text-xl font-medium group">
+              <a href={"/blog/" + post.id} class="group-hover:underline">
+                {post.data.pubDate.toLocaleDateString('en-US', {timeZone: 'UTC'})} - {post.data.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
   </body>
 </html>
