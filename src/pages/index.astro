@@ -1,5 +1,6 @@
 ---
-import AboutMe from "@components/aboutme"
+import Home from "@components/home"
+const currentUrl = Astro.url
 ---
 
 <!doctype html>
@@ -8,14 +9,14 @@ import AboutMe from "@components/aboutme"
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="icon" type="image/png" href="/logo.jpg" />
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
     <title>Nate Wong</title>
   </head>
-  <body class="bg-bg font-jetbrains">
-    <AboutMe client:load />
+  <body class="">
+    <Home client:load currentUrl={currentUrl} />
   </body>
 </html>

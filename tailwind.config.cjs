@@ -6,7 +6,8 @@ module.exports = {
     extend: {
       fontFamily: {
         //sans: ["Inter Variable", ...defaultTheme.fontFamily.sans],
-        sans: ["Darker Grotesque", ...defaultTheme.fontFamily.sans],
+        // sans: ["Darker Grotesque", ...defaultTheme.fontFamily.sans],
+        sans: ["Segoe UI", ...defaultTheme.fontFamily.sans],
         playfair: ["playfair Display", ...defaultTheme.fontFamily.serif],
         noto: ["Noto Serif", ...defaultTheme.fontFamily.serif],
         jetbrains: ["JetBrains Mono", ...defaultTheme.fontFamily.mono],
@@ -40,6 +41,12 @@ module.exports = {
         brightOrange: "#f9b1a3",
         brightBlue: "#a6b6e9",
         brightCyan: "#99c9ce",
+
+        // Xbox green palette
+        xboxGreen: "#107c10",
+        xboxGreenLight: "#4ec34e",
+        xboxGreenDark: "#0e6b0e",
+        xboxGreenBright: "#8dd68d",
 
         gray0: "#18181a",
         gray1: "#1b1b1c",
