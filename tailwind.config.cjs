@@ -11,6 +11,7 @@ module.exports = {
         playfair: ["playfair Display", ...defaultTheme.fontFamily.serif],
         noto: ["Noto Serif", ...defaultTheme.fontFamily.serif],
         jetbrains: ["JetBrains Mono", ...defaultTheme.fontFamily.mono],
+        plex: ["IBM Plex Mono", ...defaultTheme.fontFamily.mono],
       },
       colors: {
         bg: "#161617",

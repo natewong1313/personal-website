@@ -1,22 +1,16 @@
 ---
-import Home from "@components/home"
-const currentUrl = Astro.url
+import Layout from "../layouts/main.astro"
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/png" href="/logo.jpg" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
-    <title>Nate Wong</title>
-  </head>
-  <body class="">
-    <Home client:load currentUrl={currentUrl} />
-  </body>
-</html>
+<Layout title="Nate Wong">
+  <div class="w-full max-w-xl mx-auto my-12">
+      <h1 class="text-xl font-semibold">Nate Wong</h1>
+      <p class="mt-2">{ ">" } Software engineer, currently at Cloudflare</p>
+      <p class="mt-2">{ ">" } Austin, Texas</p>
+      <p class="text-stone-800 mt-4">In high school, I developed arbitrage software that helped thousands of users obtain limited edition sneakers and apparel before they sold out. Since then, I've worked on several unsuccessful ventures but continue to hone my craft and love for the game.</p>
+      <p class="mt-4 text-stone-800 bg-stone-300 p-2">
+        <a href="/blog" class="text-red hover:underline">Read my blog</a>, where I detail a lot of the weird developer side quests I stumble upon
+      </p>
+    </div>
+</Layout>
+

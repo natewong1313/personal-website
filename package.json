@@ -10,14 +10,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "4.3.0",
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/react": "4.4.2",
+    "@astrojs/sitemap": "^3.6.0",
     "@astrojs/tailwind": "6.0.2",
     "@fontsource-variable/hanken-grotesk": "^5.2.8",
     "@fontsource-variable/inter": "^5.2.8",
     "@icons-pack/react-simple-icons": "^10.2.0",
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.3.7",
-    "astro": "5.8.1",
+    "astro": "5.16.6",
     "framer-motion": "^12.23.26",
     "lucide-react": "^0.454.0",
     "motion": "^12.23.26",
