@@ -55,7 +55,29 @@ module.exports = {
         gray3: "#313134",
         gray4: "#3b3b3e",
       },
+      typography(theme) {
+        return {
+          DEFAULT: {
+            css: {
+              'code::before': {
+                content: 'none', // don’t generate the pseudo-element
+              },
+              'code::after': {
+                content: 'none'
+              },
+              code: {
+                backgroundColor: theme('colors.stone.300'),
+                borderRadius: theme('borderRadius.DEFAULT'),
+                paddingLeft: theme('spacing[1.5]'),
+                paddingRight: theme('spacing[1.5]'),
+                paddingTop: theme('spacing.1'),
+                paddingBottom: theme('spacing.1'),
+              },
+            }
+          }
+        }
+      }
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 }
