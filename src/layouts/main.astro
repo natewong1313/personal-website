@@ -1,5 +1,6 @@
 ---
 import { SEO } from 'astro-seo';
+import '../styles/global.css';
 
 const {title, description = "Personal website of Nate Wong - Software engineer at Cloudflare"} = Astro.props
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);

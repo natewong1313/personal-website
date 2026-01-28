@@ -1,5 +1,6 @@
 ---
 import { SEO } from 'astro-seo';
+import '../styles/global.css';
 import FormattedDate from "../components/FormattedDate.astro"
 const { title, description = "A blog post by Nate Wong", pubDate, updatedDate, heroImage } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
